@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>basic coding quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SECTION: HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/site/slime_icon.png" width="30" height="30" class="d-inline-block align-top ml-2 mr-3" alt="Picture of a Puyo Puyo slime." loading="lazy">
+            BASIC CODING QUIZ
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            ━━━━━━
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="scores.html">
+                    Scores
+                </a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <time class="timer">
+                TIME: <span id="timeleft">0</span>
+            </time>
+          </span>
+        </div> <!-- move the timer to the header section-->
+      </nav>
+
+<!-- SECTION: QUIZ-->
+<div class="d-flex align-items-center">
+    <main class="w-100 row justify-content-center">
+        <article class="col-10 col-lg-5 bg-white my-4 rounded-lg p-5">
+            <section id="startPage">
+                <h1>
+                    A quest emerges!
+                </h1>
+                <p>
+                    You will be tasked to solve some questions related to coding. Incorrect answers will impact your score. Can you complete this quest? <img src="./assets/images/site/wizard_gif.gif" alt="Image of a pixelized wizard" width="20" height="20" />
+                </p>
+                <button id="start">Start</button>
+            </section>
+            <!--
+            <section id="question" class="hide">
+                <h2 id="questionTitle"></h2>
+                <div id="answers" class="answers"></div>
+            </section>
+            <section id="endPage" class="hide">
+                <h2>
+                    <span id="finalScore">98</span>
+                </h2>
+                <p>
+                    is your final score!
+                </p>
+                <p>
+                    Save your progress?
+                </p>
+                <p>
+                    <input type="text" id="yourName" max="3" />
+                </p>
+                <p>
+                    <button id="submitName">Save</button>
+                </p>
+            </section> -->
+        </article>
+    </main>
+</div>
+    <!-- <script></script> ADD IN SCRIPT-->
+</body>
+
+</html>
