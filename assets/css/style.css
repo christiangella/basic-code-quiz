@@ -1,0 +1,25 @@
+* {
+    font-family: 'Silkscreen', cursive; 
+}
+
+nav {
+    background-color: #000 !important;
+}
+
+nav a:hover {
+    color: rgb(237, 218, 8) !important;
+}
+
+body {
+    background: #000;
+    background-image: url("/assets/images/site/dw_background_02.png");
+    background-repeat: no-repeat;
+   }
+
+h1 {
+    text-align: center;
+}
+
+.timer {
+    font-family: 'Silkscreen', cursive;
+}
