@@ -30,7 +30,7 @@ The repository focuses on Javascript code to build the function and logic for th
 * Personality, because machines should unionize as well.
 * Gives audio and written feedback for correct and incorrect answers.
 
-![Screenshot image of the deployed webpage, showing the quiz itself.](./assets/images/repo/module_04_demo.gif)
+![Animated GIF of a trial demo of the deployed repository.](./assets/images/repo/module_04_demo.gif)
 
 ## Installation
 
@@ -39,7 +39,7 @@ Clone a copy of the repository by going to the repo code and selecting Code. In 
 * HTTPS: `https://github.com/christiangella/basic-code-quiz.git`
 * SSH: `git@github.com:christiangella/basic-code-quiz.git`
 
-![text.](assets/images/repo/--)
+![Screenshot image of Gitlab and the steps to install the repository.](./assets/images/repo/module_04_screenshot_002.png)
 
 ## Deployment
 
