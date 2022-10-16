@@ -37,10 +37,14 @@ h3 {
 
 /* -- PARAGRAPH STYLES */
 p {
+    margin-top: 25px;
+}
+
+/* -- BUTTON STYLES */
+.standard {
     margin-top: 20px;
 }
 
-/* -- BUTTON STYLE */
 button:hover {
     background-color: gold;
 }
@@ -69,7 +73,13 @@ section button {
 }
 
 /* -- FINAL SCORE STYLE */
-#finalScore {
-    font-size: 30px;
-    letter-spacing: -3px;
+#highscore {
+    font-size: 16px;
+    letter-spacing: -2px;
+}
+
+ol {
+    padding-left: 0px;
+    font-size: 20px;
+    color: #000;
 }
