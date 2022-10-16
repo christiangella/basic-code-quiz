@@ -24,13 +24,15 @@ The repository focuses on Javascript code to build the function and logic for th
 * Appends IDs and elements on the HTML page, and removes/add classes.
 * References the array of questions and publishes it to the page.
 * Integrates a timer as the primary mode of recording a score.
-
-* Code will prompt user to try again if input does not match established parameters.
-* Selectable criterion for inclusion in string generation.
-* Personality, because machines should unionize as well.
 * Gives audio and written feedback for correct and incorrect answers.
 
 ![Animated GIF of a trial demo of the deployed repository.](./assets/images/repo/module_04_demo.gif)
+
+## Future Iterations
+
+The website could expand to incorporate the following features, as they are currently not working:
+
+* Bugfix the localStorage feature, as the website is currently unable to store saved scores and names.
 
 ## Installation
 
@@ -44,12 +46,6 @@ Clone a copy of the repository by going to the repo code and selecting Code. In 
 ## Deployment
 
 The website can be previewed at the following link: https://christiangella.github.io/basic-code-quiz/
-
-## Future Iterations
-
-The website could expand to incorporate the following features:
-
-* Bugfix the localStorage feature, as the website is currently unable to store saved scores and names.
 
 ## Credits
 
