@@ -25,14 +25,19 @@ The repository focuses on Javascript code to build the function and logic for th
 * References the array of questions and publishes it to the page.
 * Integrates a timer as the primary mode of recording a score.
 * Gives audio and written feedback for correct and incorrect answers.
+* Utilizes localStorage to store an array that stores name and score.
+* Retrieves localStorage data to print to leaderboard page.
 
 ![Animated GIF of a trial demo of the deployed repository.](./assets/images/repo/module_04_demo.gif)
 
 ## Future Iterations
 
-The website could expand to incorporate the following features, as they are currently not working:
+The website could expand to incorporate the following features:
 
-* Bugfix the localStorage feature, as the website is currently unable to store saved scores and names.
+* More complex logic and/or score improvement.
+* Include more aesthetic elements that make sense of the page.
+* Adjust flexbox properties and media queries.
+
 
 ## Installation
 
