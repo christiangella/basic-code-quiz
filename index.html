@@ -14,22 +14,19 @@
 
 </head>
 
-<body>
+<body alt="Background image of an 8-bit Dragon Quest overworld map.">
 
 <!-- SECTION: HEADER -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-            <img src="./assets/images/site/slime_icon.png" width="30" height="30" class="d-inline-block align-top ml-2 mr-3" alt="Picture of a Puyo Puyo slime." loading="lazy">
+            <img src="./assets/images/site/slime_icon.png" width="30" height="30" class="d-inline-block align-top ml-2 mr-3" alt="Picture of a blue Dragon Quest slime." loading="lazy">
             BASIC CODING QUIZ
           </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-collapse" id="navbarText">
             ━━━━━━
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="index.html">
                     Home
                 </a>
             </li>
@@ -44,48 +41,48 @@
                 TIME: <span id="timeleft">0</span>
             </time>
           </span>
-        </div> <!-- move the timer to the header section-->
+        </div>
       </nav>
 
 <!-- SECTION: QUIZ-->
 <div class="d-flex align-items-center">
     <main class="w-100 row justify-content-center">
-        <article class="col-10 col-lg-5 bg-white my-4 rounded-lg p-5">
+        <article class="col-10 col-lg-5 bg-white my-5 rounded-lg p-5">
             <section id="startPage">
                 <h1>
                     A quest emerges!
                 </h1>
                 <p>
-                    You will be tasked to solve some questions related to coding. Incorrect answers will impact your score. Can you complete this quest? <img src="./assets/images/site/wizard_gif.gif" alt="Image of a pixelized wizard" width="20" height="20" />
+                    Adventurer! It's dangerous to leave town unless you've honed your coding skills. Let me test your knowledge to ease my mind. Incorrect answers will convince me otherwise. <img src="./assets/images/site/wizard_gif.gif" alt="Image of a pixelized wizard" width="20" height="20" />
                 </p>
-                <button id="start">Start</button>
+                <center><button id="start">Start Quest</button></center>
             </section>
-            <!--
             <section id="question" class="hide">
                 <h2 id="questionTitle"></h2>
-                <div id="answers" class="answers"></div>
+                <p id="choice" class="choices"></p>
             </section>
             <section id="endPage" class="hide">
-                <h2>
-                    <span id="finalScore">98</span>
-                </h2>
-                <p>
-                    is your final score!
-                </p>
+                <center>
+                <h3>
+                    <span id="finalScore"></span> is your final score!
+                </h3>
                 <p>
                     Save your progress?
                 </p>
                 <p>
-                    <input type="text" id="yourName" max="3" />
+                    <input type="text" id="yourName" />
                 </p>
-                <p>
                     <button id="submitName">Save</button>
                 </p>
-            </section> -->
+                </center>
+            </section>
+            <section id="response">
+            </section>
         </article>
     </main>
 </div>
-    <!-- <script></script> ADD IN SCRIPT-->
+
+<script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>

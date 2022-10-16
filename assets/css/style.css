@@ -12,14 +12,59 @@ nav a:hover {
 
 body {
     background: #000;
-    background-image: url("/assets/images/site/dw_background_02.png");
+    background-image: url("/assets/images/site/dw_background.png");
     background-repeat: no-repeat;
    }
 
 h1 {
     text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    margin-top: 20px;
 }
 
 .timer {
     font-family: 'Silkscreen', cursive;
+}
+
+section button {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.choices button {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 11px;
+
+}
+
+button:hover {
+    background-color: gold;
+}
+
+.response {
+    text-align: center;
+}
+
+#finalScore {
+    font-size: 30px;
+    letter-spacing: -3px;
 }
