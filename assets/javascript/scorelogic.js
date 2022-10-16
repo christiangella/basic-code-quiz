@@ -5,6 +5,7 @@ function printLeaderboard() {
     /* FUNCTION: Retrieves scores in local storage OR sets new array. */
     var highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
 
+    /* FUNCTION: Sorts the scores by the second stored variable, the score. */
     highscores.sort(function (a, b) {
         return b.score - a.score;
       });
