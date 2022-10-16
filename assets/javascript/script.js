@@ -101,7 +101,7 @@ function answerPressed(event) {
     }
     /* FUNCTION: Establishes logic for incorrect answer: penalizes timer. */
     if (answerButton.value !==questions[currentQuestionNumber].answer) {
-        time -= 10;
+        time -= 20;
     /* FUNCTION: If timer goes to zero or beyond, time sets to zero. */
         if (time < 0) {
             time = 0
