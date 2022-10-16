@@ -14,33 +14,28 @@
 
 </head>
 
-<body>
+<body alt="Background image of an 8-bit Dragon Quest overworld map.">
 
 <!-- SECTION: HEADER -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="./assets/images/site/slime_icon.png" width="30" height="30" class="d-inline-block align-top ml-2 mr-3" alt="Picture of a blue Dragon Quest slime." loading="lazy">
             BASIC CODING QUIZ
           </a>
         <div class="navbar-collapse" id="navbarText">
             ━━━━━━
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     Home
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="scores.html">
                     Scores
                 </a>
             </li>
           </ul>
-          <span class="navbar-text">
-            <time class="timer">
-                TIME: <span id="timeleft">0</span>
-            </time>
-          </span>
         </div>
       </nav>
 
@@ -48,12 +43,11 @@
 <div class="d-flex align-items-center">
     <main class="w-100 row justify-content-center">
         <article class="col-10 col-lg-5 bg-white my-5 rounded-lg p-5">
+        <!-- SECTION: LEADERBOARD-->
             <section>
                 <h1>Leaderboard</h1>
                 <p>
-                    <ol>
-                        <li id="highscores"></li>
-                    </ol>
+                    <ol id="highscore"></ol>
                 </p>
             </section>
         </article>
