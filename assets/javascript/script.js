@@ -1,34 +1,45 @@
 /* FUNCTION: Lists questions for the quiz. */
 var questions = [
     {
-      question: 'How many times should an ID be used in an HTML page?',
-      choices: ['One.', 'Two.', 'Three.', 'Four.'],
-      answer: 'One.',
-    }
-    ,
+      question: 'Which one of these is not a loop structure?',
+      choices: ['for.', 'while.', 'do-while.', 'if.'],
+      answer: 'if.',
+    },
+    {
+        question: 'An if/else statement is enclosed within _____.',
+        choices: ['Quotes.', 'Parenthesis.', 'Curly brackets.', 'Square brackets.'],
+        answer: 'Parenthesis.',
+    },
     {
         question: 'Where is the lowest the script tag can go on an HTML page?',
         choices: ['The Doctype tag.', 'The Head tag.', 'The Body tag.', 'The HTML Tag.'],
         answer: 'The Body tag.',
-    }
-    ,
+    },
     {
         question: 'What does an API mean in full stacks programming?',
         choices: ['Asian Pacific Islander.', 'Application Programming Interface.', 'Application Process Integration.', 'Asset Priority Index.'],
         answer: 'Application Programming Interface.',
-    }
-    ,
+    },
+    {
+        question: "Commonly used data types DO NOT include:",
+        choices: ["strings", "booleans", "alerts", "numbers"],
+        answer: "alerts"
+    },
     {
         question: 'What is NOT a functions of JQUERY?',
-        choices: ['Traversing the DOM.', 'Manipulating the DOM.', 'Repairing errors in the DOM.', 'Simplying functions in Javascript.'],
+        choices: ['Repairing errors in the DOM.','Traversing the DOM.', 'Manipulating the DOM.', 'Simplying functions in Javascript.'],
         answer: 'Repairing errors in the DOM.',
-    }
-    ,
+    },
     {
         question: 'What is a limitation of a string?',
-        choices: ['They are small and hard to utilize in coding.', 'They are not dynamic and cannot be changed.', 'Variable lengths make them unpredictable.', 'They do not have limitations.'],
-        answer: 'They are not dynamic and cannot be changed.',
+        choices: ['They are small and hard to use.', 'They are not dynamic and do not change.', 'Variable lengths make them unpredictable.', 'They do not have limitations.'],
+        answer: 'They are not dynamic and do not change.',
     },
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+        answer: "console.log"
+      },
 ];
 
 /* FUNCTION: Allows to move between questions and establish time. */
@@ -48,6 +59,9 @@ var soundCorrect = new Audio('./assets/sfx/correct.wav')
 var soundIncorrect = new Audio('./assets/sfx/incorrect.wav')
 var soundFinish = new Audio('./assets/sfx/finish.wav')
 var soundTimeUp = new Audio('./assets/sfx/timeup.wav')
+
+var highscores = [];
+
 
 /* FUNCTION: Defines function for what happens when the function beginQuiz starts. */
 function beginQuiz() {
@@ -101,7 +115,7 @@ function answerPressed(event) {
     }
     /* FUNCTION: Establishes logic for incorrect answer: penalizes timer. */
     if (answerButton.value !==questions[currentQuestionNumber].answer) {
-        time -= 50;
+        time -= 60;
     /* FUNCTION: If timer goes to zero or beyond, time sets to zero. */
         if (time < 0) {
             time = 0
@@ -151,7 +165,7 @@ function endQuiz() {
 
     /* FUNCTION: Publishes the score to the page. Calculates score. */
     var finalScoreEl = document.getElementById('finalScore');
-    finalScoreEl.textContent = time * 10;
+    finalScoreEl.textContent = time;
 
     /* FUNCTION: Plays different music based on whether quiz was successful or failure. */
     setTimeout(function() {
@@ -178,14 +192,14 @@ function clockFunction() {
 }
 
 /* FUNCTION: Defines the function for saving scores. */
-function saveHighScore() {
+function saveResults() {
     /* FUNCTION: Records player name based on input. */
     var playerName = playerNameEl.value.trim();
 
     /* FUNCTION: Creates condition that value cannot be empty. */
     if (playerName !== '') {
     /* FUNCTION: Retrieves any stored values OR sets new array. */
-        var highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
+        var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
     /* FUNCTION: Establishes array that stores values of results. */
         var newScore = {
@@ -205,7 +219,7 @@ function saveHighScore() {
 /* FUNCTION: Defines event for user to submit scores. */
 function identifyEnter(event) {
     if (event.key == 'Click') {
-        saveHighscore();
+        saveResults();
       }    
 }
 
@@ -214,6 +228,6 @@ startBtn.onclick = beginQuiz
 /* FUNCTION: Allows selecting an answer to move to next question/page. */
 choicesEl.onclick = answerPressed
 /* FUNCTION: Allows button submission of high score. */
-submitBtn.onclick = saveHighScore
+submitBtn.onclick = saveResults
 /* FUNCTION: Allows user to enter name.  */
 playerNameEl.onkeyup = identifyEnter
