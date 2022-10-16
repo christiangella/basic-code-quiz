@@ -18,7 +18,7 @@
 
 <!-- SECTION: HEADER -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="./assets/images/site/slime_icon.png" width="30" height="30" class="d-inline-block align-top ml-2 mr-3" alt="Picture of a blue Dragon Quest slime." loading="lazy">
             BASIC CODING QUIZ
           </a>
@@ -44,10 +44,11 @@
         </div>
       </nav>
 
-<!-- SECTION: QUIZ-->
+<!-- SECTION: QUIZ BOX-->
 <div class="d-flex align-items-center">
     <main class="w-100 row justify-content-center">
         <article class="col-10 col-lg-5 bg-white my-5 rounded-lg p-5">
+        <!-- SECTION: INTRO PAGE-->
             <section id="startPage">
                 <h1>
                     A quest emerges!
@@ -57,10 +58,12 @@
                 </p>
                 <center><button id="start">Start Quest</button></center>
             </section>
+        <!-- SECTION: QUESTIONS PAGE-->
             <section id="question" class="hide">
                 <h2 id="questionTitle"></h2>
                 <p id="choice" class="choices"></p>
             </section>
+        <!-- SECTION: EXIT PAGE PAGE-->
             <section id="endPage" class="hide">
                 <center>
                 <h3>
@@ -73,6 +76,9 @@
                     <input type="text" id="yourName" />
                 </p>
                     <button id="submitName">Save</button>
+                </p>
+                <p>
+                    <ol id="highscore"></ol>
                 </p>
                 </center>
             </section>

@@ -1,7 +1,10 @@
+/* -- GENERAL FONT STYLE */
+/* ----> Sets font to entire webpage. */
 * {
     font-family: 'Silkscreen', cursive; 
 }
 
+/* -- NAVIGATION BAR STYLES */
 nav {
     background-color: #000 !important;
 }
@@ -10,12 +13,15 @@ nav a:hover {
     color: rgb(237, 218, 8) !important;
 }
 
+/* -- BODY STYLE */
+/* ----> Sets background image. */
 body {
     background: #000;
-    background-image: url("/assets/images/site/dw_background.png");
+    background-image: url("../images/site/dw_background.png");
     background-repeat: no-repeat;
    }
 
+/* -- HEADER STYLES */
 h1 {
     text-align: center;
     font-size: 30px;
@@ -29,23 +35,18 @@ h3 {
     font-size: 18px;
 }
 
+/* -- PARAGRAPH STYLES */
 p {
     margin-top: 20px;
 }
 
-.timer {
-    font-family: 'Silkscreen', cursive;
+/* -- BUTTON STYLE */
+button:hover {
+    background-color: gold;
 }
 
 section button {
     font-size: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.hide {
-    display: none;
 }
 
 .choices button {
@@ -56,14 +57,18 @@ section button {
 
 }
 
-button:hover {
-    background-color: gold;
+/* -- HIDE CLASS */
+/* ----> Allows sections to be hidden */
+.hide {
+    display: none;
 }
 
+/* -- RESPONSE STYLE */
 .response {
     text-align: center;
 }
 
+/* -- FINAL SCORE STYLE */
 #finalScore {
     font-size: 30px;
     letter-spacing: -3px;
